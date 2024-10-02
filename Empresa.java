@@ -70,37 +70,3 @@ class Funcionario {
         System.out.println("Salário: R$ " + salario);
     }
 }
-
-// Classe principal para testar as classes
-public class Empresa {
-    public static void main(String[] args) {
-        // Criando objetos de PessoaFisica
-        PessoaFisica cliente1 = new PessoaFisica("João Silva", "Rua A, 123", "joao@email.com", "123.456.789-00");
-        PessoaFisica cliente2 = new PessoaFisica("Maria Oliveira", "Rua B, 456", "maria@email.com", "987.654.321-00");
-
-        // Exibindo informações dos clientes Pessoa Física
-        System.out.println("Informações dos Clientes Pessoa Física:");
-        cliente1.exibirInformacoes();
-        System.out.println();
-        cliente2.exibirInformacoes();
-        System.out.println();
-
-        // Criando objetos de PessoaJuridica
-        PessoaJuridica cliente3 = new PessoaJuridica("Empresa XYZ", "Av. Principal, 789", "contato@xyz.com", "12.345.678/0001-99");
-
-        // Exibindo informações dos clientes Pessoa Jurídica
-        System.out.println("Informações dos Clientes Pessoa Jurídica:");
-        cliente3.exibirInformacoes();
-        System.out.println();
-
-        // Criando objetos de Funcionario
-        Funcionario funcionario1 = new Funcionario("Carlos Almeida", "321.654.987-00", "Rua C, 789", 3500.00);
-        Funcionario funcionario2 = new Funcionario("Ana Costa", "654.321.987-00", "Rua D, 101", 4500.00);
-
-        // Exibindo informações dos funcionários
-        System.out.println("Informações dos Funcionários:");
-        funcionario1.exibirInformacoes();
-        System.out.println();
-        funcionario2.exibirInformacoes();
-    }
-}
